@@ -20,25 +20,43 @@
     </header>
     <main class="main_tour">
         <h2 class="titulo_tour">Próximos Tours</h2>
-        <div class="arreglo">
-            <div class="card1" style="width: 18rem;">
-                <a href="https://www.tixr.com/groups/semafest/events/sema-fest-2023-70921" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="../resources/logo sema fest.png" alt="SEMA Fest"></a>
-                <div class="card-body">
-                <p class="card-text">3 de Noviembre en Las Vegas, Nevada. <br>S.E.M.A. Fest 2021</p>
-                </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="card2" style="width: 18rem;">
-                <a href="https://concerts.livenation.com/walmart-presents-heroes-headliners-tampa-florida-11-11-2023/event/0D005F259DA1AF90?irgwc=1&clickid=TF-1mQ3dMxyPTTI2H7Qy7RSRUkFTlpTfd2MnR00&camefrom=CFC_BUYAT_1234554&impradid=1234554&REFERRAL_ID=tmfeedbuyat1234554&wt.mc_id=aff_BUYAT_1234554&utm_source=1234554-Songkick&impradname=Songkick&utm_medium=affiliate&ircid=4272" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="../resources/mid florida.png" alt="Midflorida Amphitheatre"></a>
-                <div class="card-body">
-                <p class="card-text">11 de Noviembre en Tampa, Florida. <br>Midflorida Amphitheatre</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../resources/logo sema fest.png" alt="SEMA Fest" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>S.E.M.A. Fest</h5>
+                  <p>3 de Noviembre en Las Vegas, Nevada.</p>
                 </div>
-            </div>
-            <div class="card3" style="width: 18rem;">
-                <a href=""><img class="card-img-top" src="../resources/Rogers Arena.png" alt="Rogers Arena"></a>
-                <div class="card-body">
-                <p class="card-text">30 de Enero en Vancouver, Canadá. <br>Rogers Arena <br>CANCELADO</p>
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/mid florida.png" alt="Midflorida Amphitheatre" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Midflorida Amphitheatre</h5>
+                  <p>11 de Noviembre en Tampa, Florida.</p>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/Rogers Arena.png" alt="Rogers Arena" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CANCELADO</h5>
+                  <p>30 de Enero en Vancouver, Canadá.</p>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <div class="tours_pasados">
             <h2 class="titulo_tourpasado">Grandes Giras pasadas</h2>

@@ -1,16 +1,17 @@
+.almedio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main_oficial{
     .titulo_oficial{
-        display: flex;
+        @extend .almedio;
         color: white;
-        align-items: center;
-        justify-content: center;
         padding: 20px 0px;
     }
     .div_oficial{
-        display: flex;
+        @extend .almedio;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         list-style: none;
         a{
             color: white;

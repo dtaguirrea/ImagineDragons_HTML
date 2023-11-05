@@ -1,3 +1,8 @@
+.almedio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 main{
     .banner{
         img{
@@ -9,21 +14,39 @@ main{
     .titulo{
         text-align: center;
         color: white;
-        font-size: 40px;
+        font-size: 30px;
         padding: 20px 0px;
     }
-    .maincontent{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 30%;
-            padding: 20px 20px;
+    @media screen and (min-width:500px){
+        .maincontent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            img{
+                width: 30%;
+                padding: 20px 20px;
+            }
+            p{
+                padding: 20px 20px;
+                color: white;
+            }
         }
-        p{
-            padding: 20px 20px;
-            color: white;
+    }
+    @media screen and (max-width:500px){
+        .maincontent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 80%;
+                padding: 20px 20px;
+            }
+            p{
+                padding: 20px 20px;
+                color: white;
+            }
         }
     }
 }

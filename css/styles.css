@@ -1,3 +1,215 @@
+footer {
+  position: sticky;
+  padding: 20px 20px;
+  bottom: 5px;
+  display: flex;
+  justify-content: right;
+}
+footer img {
+  width: 40px;
+  padding-left: 10px;
+}
 
+body {
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+img {
+  color: white;
+}
+
+.card {
+  background-color: black;
+}
+
+.card-text {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0px;
+  position: sticky;
+  z-index: 300000;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul .menu-link a {
+  color: white;
+  font-size: 20px;
+  padding: 0px 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+header ul .menu-link a:hover {
+  color: white;
+  font-size: 30px;
+}
+
+main .banner img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+main .titulo {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding: 20px 0px;
+}
+main .maincontent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .maincontent img {
+  width: 30%;
+  padding: 20px 20px;
+}
+main .maincontent p {
+  padding: 20px 20px;
+  color: white;
+}
+
+.main_musica .titulo_musica {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.main_musica .maincontent_disco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main_musica .maincontent_disco p {
+  padding: 20px 0px;
+  width: 80%;
+  color: white;
+}
+
+.main_oficial .titulo_oficial {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.main_oficial .div_oficial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.main_oficial .div_oficial a {
+  color: white;
+  font-size: 20px;
+  padding: 0px 15px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.main_oficial .div_oficial img {
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20%;
+}
+
+.main_quienesson .maincontent_quienesson {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main_quienesson .maincontent_quienesson img {
+  width: 30%;
+  padding: 20px 20px;
+}
+.main_quienesson .maincontent_quienesson p {
+  padding: 20px 20px;
+  color: white;
+}
+.main_quienesson .titulo_quienesson {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.main_quienesson .maincontent_integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tour {
+  display: grid;
+  grid-template-areas: "header header header" "card1 card2 card3" "card1 cardd2 card3" "footer footer footer";
+}
+.tour .header_tour {
+  grid-area: header;
+  display: flex;
+}
+.tour .main_tour .titulo_tour {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.tour .main_tour .arreglo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tour .main_tour .arreglo .card1 {
+  grid-area: card1;
+}
+.tour .main_tour .arreglo .card2 {
+  grid-area: card2;
+}
+.tour .main_tour .arreglo .card3 {
+  grid-area: card3;
+}
+.tour .main_tour .tours_pasados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tour .main_tour .tours_pasados .titulo_tourpasado {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.tour .main_tour .tours_pasados .texto_tourpasado {
+  padding: 20px 0px;
+  width: 80%;
+  color: white;
+}
+.tour .footer_tour {
+  grid-area: footer;
+}
 
 /*# sourceMappingURL=styles.css.map */

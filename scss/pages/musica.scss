@@ -1,0 +1,21 @@
+.main_musica{
+    .titulo_musica{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .maincontent_disco{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        p{
+            padding: 20px 0px;
+            width: 80%;
+            color: white;
+        }
+    }
+}

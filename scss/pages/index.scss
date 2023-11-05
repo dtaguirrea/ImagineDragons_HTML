@@ -1,0 +1,29 @@
+main{
+    .banner{
+        img{
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .titulo{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        padding: 20px 0px;
+    }
+    .maincontent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 30%;
+            padding: 20px 20px;
+        }
+        p{
+            padding: 20px 20px;
+            color: white;
+        }
+    }
+}

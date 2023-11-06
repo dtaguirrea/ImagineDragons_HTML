@@ -11,6 +11,7 @@ footer img {
   transition: all 0.5s;
 }
 footer img:hover {
+  transform: translateY(-5px);
   width: 60px;
 }
 
@@ -40,7 +41,8 @@ img {
 
 header {
   background-color: black;
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   position: sticky;
   z-index: 300000;
   width: 100%;
@@ -61,7 +63,6 @@ header {
     padding: 0px;
     text-decoration: none;
     transition: all 0.5s;
-    text-decoration: none;
   }
   header ul .menu-link a:hover {
     color: white;
@@ -82,7 +83,6 @@ header {
     padding: 0px 15px;
     text-decoration: none;
     transition: all 0.5s;
-    text-decoration: none;
   }
   header ul .menu-link a:hover {
     color: white;
@@ -254,6 +254,8 @@ main .titulo {
 }
 .tour .header_tour {
   grid-area: header;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 .tour .main_tour .titulo_tour {
   color: white;
@@ -261,6 +263,10 @@ main .titulo {
 }
 .tour .main_tour #carouselExampleCaptions {
   grid-area: carousel;
+}
+.tour .main_tour #carouselExampleCaptions img {
+  height: auto;
+  width: 70%;
 }
 .tour .main_tour .tours_pasados {
   flex-direction: column;

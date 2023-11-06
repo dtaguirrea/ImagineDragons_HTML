@@ -12,6 +12,8 @@
     ;
     .header_tour{
         grid-area: header;
+        padding-top: 20px;
+        padding-bottom: 5px;
     }
     .main_tour{
         .titulo_tour{
@@ -21,6 +23,10 @@
         }
         #carouselExampleCaptions{
             grid-area: carousel;
+            img{
+                height: auto;
+                width:70%;
+            }
         }
         .tours_pasados{
             @extend .almedio;
@@ -41,8 +47,3 @@
         grid-area: footer;
     }
 }
-
-
-
-
-

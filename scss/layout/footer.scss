@@ -9,6 +9,7 @@ footer{
         padding-left: 10px;
         transition: all 0.5s;
         &:hover{
+            transform: translateY(-5px);
             width: 60px;
         }
     }

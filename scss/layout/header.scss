@@ -1,6 +1,7 @@
 header{
     background-color: black;
-    padding: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     position: sticky;
     z-index: 300000;
     width: 100%;
@@ -20,7 +21,6 @@ header{
                     padding: 0px;
                     text-decoration: none;
                     transition: all 0.5s;
-                    text-decoration: none;
                     &:hover{
                         color:white; 
                         font-size:20px;  
@@ -43,7 +43,6 @@ header{
                     padding: 0px 15px;
                     text-decoration: none;
                     transition: all 0.5s;
-                    text-decoration: none;
                     &:hover{
                         color:white; 
                         font-size:30px;  

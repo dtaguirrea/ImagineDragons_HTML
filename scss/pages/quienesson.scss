@@ -1,3 +1,18 @@
+@mixin phone{
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (min-width:1000px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (min-width:600px) {
+        @content;
+    }
+}
 .almedio{
     display: flex;
     align-items: center;
@@ -5,7 +20,7 @@
 }
 .main_quienesson{
     width: 100%;
-    @media screen and (min-width:600px) {
+    @include pc() {
         .maincontent_quienesson{
             display: flex;
             align-items: center;
@@ -21,7 +36,24 @@
             }
         }         
     }
-    @media screen and (max-width:600px) {
+    @include tablet{
+        .maincontent_quienesson{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            img{
+                width: 40%;
+                padding: 20px 20px;
+            }
+            p{
+                width: 50%;
+                padding: 20px 20px;
+                color: white;
+            }
+        } 
+    }
+    @include phone() {
         .maincontent_quienesson{
             display: flex;
             align-items: center;

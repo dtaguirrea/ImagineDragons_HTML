@@ -1,3 +1,18 @@
+@mixin phone{
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (min-width:1000px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (min-width:600px) {
+        @content;
+    }
+}
 header{
     background-color: black;
     padding-top: 20px;
@@ -7,7 +22,7 @@ header{
     width: 100%;
     top: 0px;
     left: 0px;
-    @media screen and (max-width:500px) {
+    @include phone() {
         ul{
             display: flex;
             justify-content: space-around;
@@ -29,7 +44,7 @@ header{
             }
         }
     }
-    @media screen and (min-width:500px) {
+    @include tablet(){
         ul{
             display: flex;
             justify-content: center;
@@ -40,6 +55,29 @@ header{
                 a{
                     color: white;
                     font-size: 20px;
+                    padding: 0px 15px;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover{
+                        color:white; 
+                        font-size:30px;  
+                    }
+                }
+            }
+            
+        }
+    }
+    @include pc() {
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding-right: 32px;
+            .menu-link{
+                a{
+                    color: white;
+                    font-size: 25px;
                     padding: 0px 15px;
                     text-decoration: none;
                     transition: all 0.5s;

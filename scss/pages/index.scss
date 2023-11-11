@@ -1,3 +1,18 @@
+@mixin phone{
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (min-width:1000px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (min-width:600px) {
+        @content;
+    }
+}
 .almedio{
     display: flex;
     align-items: center;
@@ -17,7 +32,7 @@ main{
         font-size: 30px;
         padding: 20px 0px;
     }
-    @media screen and (min-width:500px){
+    @include pc(){
         .maincontent{
             display: flex;
             align-items: center;
@@ -33,7 +48,24 @@ main{
             }
         }
     }
-    @media screen and (max-width:500px){
+    @include tablet(){
+        .maincontent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            img{
+                width: 40%;
+                padding: 20px 20px;
+            }
+            p{
+                width: 50%;
+                padding: 20px 20px;
+                color: white;
+            }
+        }
+    }
+    @include phone(){
         .maincontent{
             display: flex;
             align-items: center;

@@ -49,7 +49,7 @@ header {
   top: 0px;
   left: 0px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header ul {
     display: flex;
     justify-content: space-around;
@@ -69,7 +69,7 @@ header {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header ul {
     display: flex;
     justify-content: center;
@@ -80,6 +80,26 @@ header {
   header ul .menu-link a {
     color: white;
     font-size: 20px;
+    padding: 0px 15px;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  header ul .menu-link a:hover {
+    color: white;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 32px;
+  }
+  header ul .menu-link a {
+    color: white;
+    font-size: 25px;
     padding: 0px 15px;
     text-decoration: none;
     transition: all 0.5s;
@@ -107,7 +127,7 @@ main .titulo {
   font-size: 30px;
   padding: 20px 0px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
   main .maincontent {
     display: flex;
     align-items: center;
@@ -123,7 +143,24 @@ main .titulo {
     color: white;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 600px) {
+  main .maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  main .maincontent img {
+    width: 40%;
+    padding: 20px 20px;
+  }
+  main .maincontent p {
+    width: 50%;
+    padding: 20px 20px;
+    color: white;
+  }
+}
+@media screen and (max-width: 600px) {
   main .maincontent {
     display: flex;
     align-items: center;
@@ -198,7 +235,7 @@ main .titulo {
 .main_quienesson {
   width: 100%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .main_quienesson .maincontent_quienesson {
     display: flex;
     align-items: center;
@@ -210,6 +247,23 @@ main .titulo {
     padding: 20px 20px;
   }
   .main_quienesson .maincontent_quienesson p {
+    padding: 20px 20px;
+    color: white;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main_quienesson .maincontent_quienesson {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .main_quienesson .maincontent_quienesson img {
+    width: 40%;
+    padding: 20px 20px;
+  }
+  .main_quienesson .maincontent_quienesson p {
+    width: 50%;
     padding: 20px 20px;
     color: white;
   }

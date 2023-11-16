@@ -5,12 +5,12 @@ footer{
     display: flex;
     justify-content: right;
     img{
-        width: 40px;
+        width: 55px;
         padding-left: 10px;
+        padding-right: 10px;
         transition: all 0.5s;
         &:hover{
-            transform: translateY(-5px);
-            width: 60px;
+            transform: scale(1.5);
         }
     }
 }
